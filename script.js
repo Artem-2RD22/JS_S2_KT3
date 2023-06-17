@@ -9,7 +9,7 @@ const sliderWidth = sliderContainer.clientWidth;
 let sliderPosition = 0;
 slider.style.left = `${sliderPosition - 8}px`;
 valueDisplay.style.left = `${sliderPosition + 1}px`;
-valueDisplay.textContent = Math.round((sliderPosition / sliderWidth) * 100);
+valueDisplay.textContent = sliderWidth //Math.round((sliderPosition / sliderWidth) * 100);
 
 // нажатие мыши
 slider.addEventListener('mousedown', (event) => {
