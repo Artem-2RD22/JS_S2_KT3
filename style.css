@@ -1,0 +1,43 @@
+.slider-container {
+    position: relative;
+    top: 50px;
+    width: 200px;
+    height: 5px;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.slider {
+    position: absolute;
+    top: -8px;
+    width: 20px;
+    height: 20px;
+    background-color: #007bff;
+    border-radius: 50%;
+}
+
+.slider-value {
+    position: absolute;
+    top: -30px;
+    transform: translateX(-50%);
+}
+
+.tickmarks {
+    position: absolute;
+    width: 100%;
+}
+
+.tickmark {
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background-color: #ccc;
+}
+
+.tickmark-label {
+    position: absolute;
+    top: 15px;
+    font-size: 12px;
+    text-align: center;
+    transform: translateX(-50%);
+}
