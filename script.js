@@ -3,13 +3,13 @@ const slider = document.querySelector('.slider');
 const valueDisplay = document.querySelector('.slider-value');
 const tickmarks = document.querySelector('.tickmarks');
 const sliderContainer = document.querySelector('.slider-container');
-const sliderWidth = sliderContainer.clientWidth;
+const sliderWidth = 200//sliderContainer.clientWidth;
 
 // начальное положение слайдера и значения
 let sliderPosition = 0;
 slider.style.left = `${sliderPosition - 8}px`;
 valueDisplay.style.left = `${sliderPosition + 1}px`;
-valueDisplay.textContent = sliderWidth //Math.round((sliderPosition / sliderWidth) * 100);
+valueDisplay.textContent = Math.round((sliderPosition / sliderWidth) * 100);
 
 // нажатие мыши
 slider.addEventListener('mousedown', (event) => {
